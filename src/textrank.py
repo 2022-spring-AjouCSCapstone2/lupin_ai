@@ -1,7 +1,7 @@
 from konlpy.tag import Komoran
 import kss
-from summarizer import KeysentenceSummarizer
-from summarizer import KeywordSummarizer
+from .summarizer import KeysentenceSummarizer
+from .summarizer import KeywordSummarizer
 import itertools
 from pathlib import Path
 import os
