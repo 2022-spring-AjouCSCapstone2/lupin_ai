@@ -2,7 +2,8 @@
 
 ## STT
 
-####STTstart.py
+#### STTstart.py
+
 `python STTstart.py`
 
 - 실행 시 ./audio 디렉토리의 모든 파일에 대해서 CLOVA SPEECH API 요청을 보내고 이 결과값을 ./text/org 디렉토리에 저장됨. 이후 변환된 audio 파일은 삭제 처리
