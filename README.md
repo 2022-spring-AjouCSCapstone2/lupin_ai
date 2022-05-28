@@ -7,7 +7,9 @@
 `python STTstart.py`
 
 - 실행 시 ./audio 디렉토리의 모든 파일에 대해서 CLOVA SPEECH API 요청을 보내고 이 결과값을 ./text/org 디렉토리에 저장됨. 이후 변환된 audio 파일은 삭제 처리
+  
   `./audio/sample1.wav`
+  
   `./text/org/sample1.txt`
 - 확장자만 바뀌고, 파일 이름은 그대로 유지됨
 
@@ -17,6 +19,7 @@
 반드시 문자열 맨 뒤에 / 넣어야합니다.
 
 ex) audio_path = '/CLOVA/audio/'
+
 ex) text_path = '/CLOVA/text/org/'
 
 ---
@@ -41,6 +44,7 @@ ex) text_path = '/CLOVA/text/org/'
 반드시 문자열 맨 뒤에 / 넣어야합니다.
 
 ex) original_txt_path = '/CLOVA/text/org/'
+
 ex) summary_txt_path = '/CLOVA/text/sum/'
 
 ---
@@ -59,7 +63,9 @@ A교시가 끝나는 시간인 10시 15분 이후인 11시 부터 19시까지 2�
 ### crontab 설정
 
 crontab 편집기로 들어와진 이후 과정으로 하단에 아래 내용을 추가한다.
+
 `0 11,13,15,17,19 1,2,3,4,5 * * python [STTstart.py 디렉토리]`
+
 `0 11,13,15,17,19 1,2,3,4,5 * * python [textrank.py 디렉토리]`
 
 ---
