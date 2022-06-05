@@ -36,7 +36,7 @@ ex) text_path = '/CLOVA/text/org/'
 
 ### requirements
 
-`pip install kss, konlpy`
+`pip install kss konlpy`
 
 ### 주의사항
 
@@ -46,27 +46,6 @@ ex) text_path = '/CLOVA/text/org/'
 ex) original_txt_path = '/CLOVA/text/org/'
 
 ex) summary_txt_path = '/CLOVA/text/sum/'
-
----
-
-## crontab
-
-상시로 STT, textrank를 실행하는것이 아닌, 평일 시간대에 정기적으로 STT, textrank를 실행
-A교시가 끝나는 시간인 10시 15분 이후인 11시 부터 19시까지 2시간 간격으로 실행
-
-### crontab 초기 실행
-
-`crontab -e`
-
-- 이후 편집에 사용할 편집기를 고르면 됨
-
-### crontab 설정
-
-crontab 편집기로 들어와진 이후 과정으로 하단에 아래 내용을 추가한다.
-
-`0 11,13,15,17,19 1,2,3,4,5 * * python [STTstart.py 디렉토리]`
-
-`0 11,13,15,17,19 1,2,3,4,5 * * python [textrank.py 디렉토리]`
 
 ---
 
