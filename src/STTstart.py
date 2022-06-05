@@ -7,9 +7,9 @@ text_path = '/lupin/text/org/'
 
 class ClovaSpeechClient:
     # Clova Speech invoke URL(have to change key)
-    invoke_url = 'https://clovaspeech-gw.ncloud.com/external/v1/2806/850d6ee87127dfa221485246c26d4c069fa31beca079cabf609fcf7a8f08dbab'
+    invoke_url = ''
     # Clova Speech secret key(have to change key)
-    secret = '5fceed12cb33458ebc2d20bb2f84f7d2'
+    secret = ''
 
     def req_url(self, url, completion, callback=None, userdata=None, forbiddens=None, boostings=None, wordAlignment=True, fullText=True, diarization=None):
         request_body = {
